@@ -1,50 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .main-container{
     border: 2px solid black;
     border-radius: 8px;
     box-shadow: 5px 5px ;
-    padding: 15px 30px;
-    margin: 120px auto;
-    width: 600px;
+    padding: 60px;
+    margin: 190px auto;
+    width: 1300px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
 }
 h1{
     text-align: center;
-    font-size: 50px;
-} 
-
-li:first-child{
-    color: blue;
+    margin-bottom: 50px;
 }
-li:last-child{
-    color: blue;
+p{
+    text-align: justify;
+    margin-bottom: 30px;
 }
-li:nth-child(3n){
-    color: crimson;
+ol{
+    margin-bottom: 30px;
 }
-li:nth-last-child(4n){
-    background-color: darkgoldenrod;
+li{
+    margin-left: 50px;
 }
 
-p:first-child{
-    color: green;
+
+
+h1::before{
+    content: "👉";
 }
-p:last-of-type{
-    color:blue
+h1::after{
+    content: "👈";
 }
-a:last-child{
-    color: red;
+p::first-letter{
+    font-size: 80px;
+    background-color: yellowgreen;
 }
-a:first-of-type{
-    color: blue;
+p::first-line{
+    font-style: italic;
 }
-p:nth-of-type(2n){
+p::selection{
     background-color: blueviolet;
 }
-a:nth-last-of-type(3){
-    background-color: yellow;
+ol li::marker{
+    color: green;
 }
-
-p::before{
-    content: "🐱‍🐉";
+ul li::marker{
+    color: red;
 }
